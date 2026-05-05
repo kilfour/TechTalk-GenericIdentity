@@ -260,7 +260,7 @@ public abstract class DomainEntity<T>
         => Id.GetHashCode();
 }
 ```
-Dan kunnen we het gedrag van *Id equality* centraliseren en zowel `Student` als `Course` laten overerven van `Domain Entity`:  
+Dan kunnen we het gedrag van *Id equality* centraliseren en zowel `Student` als `Course` laten overerven van `DomainEntity`:  
 ```csharp
 public class Course(string title) : DomainEntity<Course>
 {
