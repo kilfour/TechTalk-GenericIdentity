@@ -62,7 +62,7 @@ public class CoursesRegistry
         if (course == null)
             throw new ArgumentException("Course not found", nameof(courseId));
         var student = students.SingleOrDefault(a => a.Id == studentId);
-        if (course == null)
+        if (student == null)
             throw new ArgumentException("Student not found", nameof(studentId));
         // Do stuff, a.k.a. enroll the student.
     }
@@ -145,7 +145,7 @@ var course = coursesRegistry.GetCourseByTitle("Web Dev");
 var student = coursesRegistry.GetStudentByName("Ayende Rahien");
 coursesRegistry.Enroll(course.Id, student.Id);
 ```
-Verwisselen van `Student.Id`en `Course.Id` is nu onmogelijk *at compile-time*.
+Verwisselen van `Student.Id` en `Course.Id` is nu onmogelijk *at compile-time*.
 Een ID is niet zomaar data. Een ID verwijst naar iets.
 
 `Id<Course>` zegt:
@@ -184,7 +184,7 @@ public record Id<T>(Guid Value)
 Id<Course> courseId = new(Guid.NewGuid());
 Id<Student> studentId = new(Guid.NewGuid());
 ```
-**Belangrijk:** `courseId` en `studentId` zijn ook hier van een verschillent type.  
+**Belangrijk:** `courseId` en `studentId` zijn ook hier van een verschillend type.  
 #### Refactoring the Entities
 ```csharp
 public class Course
