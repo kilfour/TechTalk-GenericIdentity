@@ -26,7 +26,7 @@ public class CoursesRegistry
         if (course == null)
             throw new ArgumentException("Course not found", nameof(courseId));
         var student = students.SingleOrDefault(a => a.Id == studentId);
-        if (course == null)
+        if (student == null)
             throw new ArgumentException("Student not found", nameof(studentId));
 
         // Do stuff, a.k.a. enroll the student.

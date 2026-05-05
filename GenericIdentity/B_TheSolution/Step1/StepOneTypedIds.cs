@@ -14,7 +14,7 @@ namespace GenericIdentity.B_TheSolution.Step1;
 [DocExample(typeof(StepOneTypedIds), nameof(Example))]
 [DocContent(
 """
-Verwisselen van `Student.Id`en `Course.Id` is nu onmogelijk *at compile-time*.
+Verwisselen van `Student.Id` en `Course.Id` is nu onmogelijk *at compile-time*.
 Een ID is niet zomaar data. Een ID verwijst naar iets.
 
 `Id<Course>` zegt:

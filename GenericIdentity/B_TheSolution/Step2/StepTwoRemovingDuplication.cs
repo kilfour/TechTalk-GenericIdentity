@@ -20,7 +20,7 @@ Alleen het domeintype verandert.
 [DocExample(typeof(StepTwoRemovingDuplication), nameof(UsageExample))]
 [DocContent(
 """
-**Belangrijk:** `courseId` en `studentId` zijn ook hier van een verschillent type.
+**Belangrijk:** `courseId` en `studentId` zijn ook hier van een verschillend type.
 """)]
 [DocHeader("Refactoring the Entities")]
 [DocExample(typeof(Course))]
