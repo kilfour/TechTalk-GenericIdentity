@@ -12,7 +12,7 @@ namespace GenericIdentity;
 [DocExample(typeof(CoursesRegistry))]
 public class TheGenericIdentity
 {
-    [Fact]
+    [Fact(Skip = "Explicit")]
     public void Doc() => Explain.This<TheGenericIdentity>("README.md");
 }
 

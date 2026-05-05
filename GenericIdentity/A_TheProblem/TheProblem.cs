@@ -6,7 +6,7 @@ namespace GenericIdentity.A_TheProblem;
 [DocExample(typeof(TheProblem), nameof(Example))]
 public class TheProblem
 {
-    [Fact]
+    [Fact(Skip = "This test fails, demonstrating The Problem.")]
     [CodeSnippet]
     [DocContent(
 """
@@ -21,7 +21,7 @@ Guid is technisch correct, maar domeinmatig te vaag.
         var coursesRegistry = new CoursesRegistry();
         var course = coursesRegistry.GetCourseByTitle("Web Dev");
         var student = coursesRegistry.GetStudentByName("Ayende Rahien");
-        coursesRegistry.Enroll(course.Id, student.Id);
+        coursesRegistry.Enroll(student.Id, course.Id);
     }
 }
 

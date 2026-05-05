@@ -73,7 +73,7 @@ public class CoursesRegistry
 var coursesRegistry = new CoursesRegistry();
 var course = coursesRegistry.GetCourseByTitle("Web Dev");
 var student = coursesRegistry.GetStudentByName("Ayende Rahien");
-coursesRegistry.Enroll(course.Id, student.Id);
+coursesRegistry.Enroll(student.Id, course.Id);
 ```
 **Primitive obsession**  
 We gebruiken een primitief type voor iets dat eigenlijk domeinbetekenis heeft.  
